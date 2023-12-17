@@ -1,0 +1,99 @@
+$block-name: '.bundle-carousel';
+
+#{$block-name} {
+  
+  &__container {
+    width: 100%;
+    min-width: 850px;
+    margin: 0 auto;
+    padding: 10px;
+    background: linear-gradient(45deg, #e49a20, #ffcc4d, transparent);
+    border-radius: 8px;
+    position: relative;
+    transition: all 2s;
+
+    @media (max-width: 650px) {
+      max-width: 350px;
+      min-width: 350px;
+    }
+
+    @media (min-width: 651px) and (max-width: 734px) {
+      min-width: 535px;
+      max-width: 535px;
+    }
+
+    @media (min-width: 735px) and (max-width: 1199px) {
+      min-width: 730px;
+      max-width: 730px;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    padding: 0.7rem;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.3s;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+    &-left {
+      left: 0;
+    }
+
+    &-right {
+      right: 0;
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+
+  &__wrapper {
+    background-size: cover;
+    background-repeat: "no-repeat";
+    padding: 0 2rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__control--holder {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &-text {
+      text-shadow: 2px 2px 2px black;
+    }
+  }
+
+  &__button {
+    background: linear-gradient(45deg, #3b9713, #5ec529);
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: 150px;
+    border-radius: 19px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: -18px;
+    box-shadow: -3px 3px 4px 3px rgb(31 49 22 / 17%);
+
+    &:hover {
+      background: #3b8e18;
+    }
+  }
+
+  &__slash {
+    // this is a hack since BestFriends font family has no font for slash
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  }
+}

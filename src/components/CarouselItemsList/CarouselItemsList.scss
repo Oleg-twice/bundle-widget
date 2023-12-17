@@ -1,0 +1,17 @@
+$block-name: '.carousel-items-list';
+
+#{$block-name} {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: start;
+  overflow: auto;
+  transition: transform 1s ease;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+   -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;
+}

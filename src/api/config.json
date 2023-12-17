@@ -1,0 +1,85 @@
+{
+  "bundles": [
+    {
+      "bgImage": "...",
+      "timeLeftMs": 3600000,
+      "maxAvailable": 10,
+      "available": 5,
+      "price": {
+        "amount": 99,
+        "currencySymbol": "$"
+      },
+      "products": [
+        {
+          "productImage": "...",
+          "amount": "6,000",
+          "productTextColor": "teal"
+        },
+        {
+          "productImage": "...",
+          "amount": "30M",
+          "productTextColor": "gold"
+        },
+        {
+          "productImage": "...",
+          "amount": "20",
+          "productTextColor": "purple"
+        }
+      ]
+    },
+    {
+      "bgImage": "...",
+      "timeLeftMs": 7200000,
+      "maxAvailable": 20,
+      "available": 15,
+      "price": {
+        "amount": 149,
+        "currencySymbol": "$"
+      },
+      "products": [
+        {
+          "productImage": "...",
+          "amount": "12,000",
+          "productTextColor": "blue"
+        },
+        {
+          "productImage": "...",
+          "amount": "60M",
+          "productTextColor": "gold"
+        },
+        {
+          "productImage": "...",
+          "amount": "40",
+          "productTextColor": "pink"
+        }
+      ]
+    },
+    {
+      "bgImage": "...",
+      "timeLeftMs": 10800000,
+      "maxAvailable": 5,
+      "available": 2,
+      "price": {
+        "amount": 199,
+        "currencySymbol": "$"
+      },
+      "products": [
+        {
+          "productImage": "...",
+          "amount": "18,000",
+          "productTextColor": "green"
+        },
+        {
+          "productImage": "...",
+          "amount": "100M",
+          "productTextColor": "gold"
+        },
+        {
+          "productImage": "...",
+          "amount": "60",
+          "productTextColor": "red"
+        }
+      ]
+    }
+  ]
+}

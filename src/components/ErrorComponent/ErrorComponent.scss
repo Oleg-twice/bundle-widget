@@ -1,0 +1,30 @@
+$block-name: '.error-component';
+
+#{$block-name} {
+  height: 226px;
+  min-width: 850px;
+  border-radius: 20px;
+  width: 100%;
+  transition: all 2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 650px) {
+    max-width: 350px;
+    min-width: 350px;
+  }
+
+  @media (min-width: 651px) and (max-width: 734px) {
+    min-width: 535px;
+    max-width: 535px;
+  }
+
+  @media (min-width: 735px) and (max-width: 1199px) {
+    min-width: 730px;
+    max-width: 730px;
+  }
+}
+
+
+

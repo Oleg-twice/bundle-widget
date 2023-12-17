@@ -1,0 +1,99 @@
+$blok-name: '.skeleton';
+
+#{$blok-name} {
+  display: flex;
+  justify-content: center;
+  animation: gradient 10s ease infinite;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  height: 226px;
+  min-width: 850px;
+  border-radius: 20px;
+  width: 100%;
+  transition: all 2s;
+  overflow: hidden;
+
+  @media (max-width: 650px) {
+    max-width: 350px;
+    min-width: 350px;
+  }
+
+  @media (min-width: 651px) and (max-width: 734px) {
+    min-width: 535px;
+    max-width: 535px;
+  }
+
+  @media (min-width: 735px) and (max-width: 1199px) {
+    min-width: 730px;
+    max-width: 730px;
+    height: 240px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  &__image {
+    width: 130px;
+    height: 140px;
+    margin-right: 20px;
+    border-radius: 20px;
+    animation: scale 10s ease infinite;
+    position: relative;
+    overflow: hidden;
+    transform: translateX(-100%);
+    background: linear-gradient(-90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: shimmer 3s infinite;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      transform: translateX(-100%);
+      background: linear-gradient(-90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      border-radius: 20px;
+      animation: shimmer 3s infinite;
+      background-size: 100% 100%;
+    }
+  }
+
+  &__loading-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    text-shadow: 2px 2px 2px #000;
+    font-weight: bolder;
+    font-size: 4rem;
+  }
+
+  @keyframes scale {
+    0% {transform: scale(0.9)}
+    100% {transform: scale(1)}
+  }
+
+  @keyframes shimmer {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
+}

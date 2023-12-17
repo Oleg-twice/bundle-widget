@@ -1,0 +1,26 @@
+$block-name: '.simple-image';
+
+#{$block-name} {
+
+  &__wrapper {
+    position: relative;
+    width: fit-content;
+    border-radius: 8px;
+  }
+
+  &__real-image {
+    visibility: visible;
+
+    &--loading {
+      visibility: hidden;
+    }
+
+    &--rounded {
+      border-radius: 20px;
+    }
+  }
+
+  &__empty-img--loading {
+    border-radius: 12px;
+  }
+}
