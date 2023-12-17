@@ -20,7 +20,7 @@ export const createBundle = (
   withImage?: boolean,
   productsCount?: number,
 ) => [{
-  bgImage: withBackground ? cover : '',
+  bgImage: withBackground ? cover : '___--',
   price: getRandomItem(prices),
   time: getTime(getRandomItem(milliseconds)),
   available: '10',

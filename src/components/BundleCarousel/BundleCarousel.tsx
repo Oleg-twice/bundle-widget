@@ -1,7 +1,8 @@
-import { memo, useCallback, useState } from 'react';
+import { memo, useCallback, useState, useEffect } from 'react';
 import { CarouselItemsList } from 'src/components/CarouselItemsList';
 import { ICarouselItemProps } from 'src/components/CarouselItem';
 import { useBundleScroll } from 'src/hooks/useBundleScroll';
+import { useChangeBrokenBackground } from 'src/hooks/useCHangeBrokenBackground';
 import defaultBg from 'src/assets/snowymountains.png';
 import { withSkeletone } from 'src/hoc/withSkeleton';
 import './BundleCarousel.scss';
@@ -40,9 +41,13 @@ const BundleCarousel = memo(
       []
     );
 
+    const src = useChangeBrokenBackground(defaultBg, bgImage);
+
     return (
       <div className={`${NAME_SPACE}__container`}>
-        <div className={`${NAME_SPACE}__wrapper`} style={{ backgroundImage: `url(${bgImage || defaultBg})`}}>
+        <div
+          className={`${NAME_SPACE}__wrapper`}
+          style={{ backgroundImage: `url(${src || bgImage || defaultBg})`}}>
           <CarouselItemsList
             scrollRef={scrollRef}
             items={items}
