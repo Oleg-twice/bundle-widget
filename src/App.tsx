@@ -7,7 +7,6 @@ import './App.css'
 
 
 function App() {
-
   const {
     isItemsWithImagesChecked,
     toggleItemsWithImages,
@@ -23,9 +22,16 @@ function App() {
     productsCount: itemsAmount,
   });
 
+  if (data?.[0].items?.length) {
+    console.log(
+      `%c the amount of fetched products is = ${data?.[0].items?.length}`,
+      "color:white; background: #00AA00; padding:5px; font-weght: bold; text-transform: uppercase",
+    );
+  }
+
   return (
     <>
-      {error && <ErrorComponent text="OOPS!... Something went wrong!" />}
+      {error && <ErrorComponent text="OOPS!... Something went wrong! Please refresh the page!" />}
       {!error && (<BundleCarousel isLoading={!!loading} {...(data ? data[0] : {})} />)}
       <SettingsForm
         isItemsWithImagesChecked={isItemsWithImagesChecked}

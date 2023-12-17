@@ -49,7 +49,7 @@ const SettingsForm = memo(
           </SimpleTooltip>
           <SimpleTooltip
             text={`
-              To uncheck this checkbox,
+              If you uncheck this checkbox,
               you will fetch bundle without background image
               and be able to see default beackground!
             `}

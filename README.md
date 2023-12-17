@@ -14,12 +14,7 @@ https://github.com/Oleg-twice/bundle-widget/assets/72275930/dec5dc8a-419b-40ed-b
 
 This demonstration showcases a straightforward implementation of bundle widget in React. 
 The main stack is React, TS, Scss and current implementation primarily relies on the React and JS/TS design patterns such as custom hooks, decorators and factory patterns.
-Current application using JSON file as a stub to simulate a real data fetching, user be able to set necessary amount of items to get.
+Current application using JSON file as a stub to simulate a real data fetching, user is able to set necessary amount of items to get.
 For these purposes, a simple settings form has been implemented that helps configure and simulate data acquisition.
-Widget and items inside of it has a default image placeholders in case if server sent items without images (or with broken images).
+Widget and items inside of it have a default image placeholders in case if server send items without images (or with broken images).
 
-# Key features
-1. Responsive design
-2. Emulation of different amount of data
-3. Emulation of broken background images
-4. Handling of errors and loading state
